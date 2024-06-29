@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 550px;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    color: hsl(187, 24%, 22%);
+    position: relative;
+}
+.container h1 {
+    font-size: 1.5rem;
+    color: hsl(187, 24%, 22%);
+    margin-bottom: 1rem;
+}
+.names {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.name-field {
+    width: 48%;
+}
+.nametext {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.namefield {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+}
+.mail {
+    margin-bottom: 1rem;
+}
+.mailtext {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.mailfield {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+}
+.query {
+    margin-bottom: 1rem;
+}
+.querywrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.radiofield {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    padding: 0.5rem;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+}
+.Enquiry, .Request {
+    margin-left: 0.5rem;
+}
+.message {
+    margin-bottom: 1rem;
+}
+#messageField {
+    width: 100%;
+    height: 80px;
+    padding: 0.5rem;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    resize: none;
+}
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#consent {
+    margin-right: 0.5rem;
+}
+.consentclass {
+    display: inline-block;
+}
+.radiofield:active{
+    background-color: hsl(148, 38%, 91%);
+}
+input[type="checkbox"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+input[type="radio"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+button {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    outline: none;
+    background-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(169, 81%, 23%);
+}
+button:focus, button:active {
+    outline: none;
+    border: 1px solid hsl(169, 82%, 27%);
+}
+.validation-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+.error {
+    border: 1px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.success-msg {
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 2.8rem;
+    max-width: 450px;
+}
+.success-msg img {
+    margin-right: 0.5rem;
+    width: 15px;
+    height: auto;
+}
+.success-msg p{
+    margin-top: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+    body {
+        margin-top: 10px;
+    }
+    .container {
+        padding: 2rem 1rem;
+        width: 90%;
+        max-width: auto;
+        min-width: auto;
+        align-self: center;
+        height: fit-content; 
+        overflow-y: auto;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+
+    .name-field, .radiofield {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .setWidth {
+       width: 100%;
+    }
+
+    .querywrapper {
+        flex-direction: column;
+    }
+
+    .querywrapper .radiofield {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    #messageField {
+        width: 100%;
+        height: 120px;
+    }
+    .success-msg {
+        width: 80%;
+        position: absolute;
+        top: 0rem;
+    }
+}

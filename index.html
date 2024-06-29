@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="names">
+      <div class="name-field">
+        <label for="firstName" class="nametext">First Name *</label>
+        <input id="firstName" type="text" class="namefield setWidth">
+      </div>
+      <div class="name-field">
+        <label for="lastName" class="nametext">Last Name *</label>
+        <input id="lastName" type="text" class="namefield setWidth">
+      </div>
+    </div>
+    <div class="mail">
+      <label for="email" class="mailtext">Email Address *</label>
+      <input id="email" type="email" name="Email" id="email" class="mailfield namefield setWidth">
+    </div>
+    <div class="query">
+      <label for="querytype">Query Type *</label>
+      <div class="querywrapper">
+        <div class="radiofield">
+          <input type="radio" name="Query" id="generalEnquiry">
+          <label for="generalEnquiry" class="Enquiry">General Enquiry</label>
+        </div>
+        <div class="radiofield">
+          <input type="radio" name="Query" id="supportRequest">
+          <label for="supportRequest" class="Request">Support Request</label>
+        </div>
+      </div>
+    </div>
+    <div class="message">
+      <label for="messageField">Message *</label>
+      <textarea name="message" id="messageField"></textarea>
+    </div>
+    <div class="terms">
+      <input type="checkbox" name="consent" id="consent">
+      <label for="consent" class="consentclass">I consent to being contacted by the team *</label>
+    </div>
+    <div class="submit">
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+  <div class="success-msg hidden">
+    <img src="images/icon-success-check.svg" alt="Success">
+    <span>Message Sent!</span>
+    <p> Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
