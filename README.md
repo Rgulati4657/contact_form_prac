@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution link](https://github.com/Rgulati4657/contact_form_prac/upload)
-- Live Site URL: [live site link](https://contact-form-challenge-eta.vercel.app/)
+- Live Site URL: [live site link]([https://contact-form-challenge-eta.vercel.app/](https://contact-form-prac.vercel.app/))
 
 ## My process
 
