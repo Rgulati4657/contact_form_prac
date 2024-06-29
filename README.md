@@ -30,13 +30,13 @@ Users should be able to:
 
 ## Screenshots
 ### Desktop view
-![Desktop screenshot](/screenshot-desktop.png)
-### Desktop view success
-![error screenshot](/screenshot-desktop-success.png)
+![Desktop screenshot](/desktop-ss.jpg)
 ### Desktop view error
-![error screenshot](/screenshot-desktop-error.png)
+![error screenshot](/error-state.jpg)
+### Desktop view success
+![success screenshot](/desktop-success.jpg)
 ### Mobile view
-![Mobile screenshot](/screenshot-mobile.png)
+![Mobile screenshot](/mobile-ss.jpg)
 
 
 ### Links
